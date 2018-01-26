@@ -6,8 +6,14 @@ public class App
     {
         System.out.println("Word Count Testing App!");
     }
-    
+
     public static int wordcount(String s) {
-        return 0;
+
+            if (s == null || s=="") {
+                return 0;
+            }
+
+            String[] words = s.split("\\s+");
+            return words.length;
     }
 }
